@@ -3,7 +3,7 @@ import { useState } from "react";
 
 const LanguageContext = createContext();
 
-const initialLanguage = "es"
+const initialLanguage = "en"
 
 export const translations =  {
  es:{
