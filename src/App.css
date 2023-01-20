@@ -442,3 +442,12 @@ li {
   color: black;
   font-size: 18px;
 }
+
+.flagButton {
+  border: none;
+}
+
+.flag {
+  height: 25px;
+  border: none;
+}

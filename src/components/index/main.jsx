@@ -1,11 +1,21 @@
 import React from "react";
-import { useContext } from "react";
-import { LanguageProvider, translations } from "../contexts/LanguageContext"
+import { useContext, useState } from "react";
+import { LanguageProvider, translations, handleLanguage } from "../contexts/LanguageContext"
 import LanguageContext from "../contexts/LanguageContext";
 
 function Index() {
-const{ texts, handleLanguage } = useContext(LanguageContext)
+const initialLanguage = 'en'
+const { texts, handleLanguage } = useContext(LanguageContext)
+const { language, setLanguage } = useState(initialLanguage) 
 
+function languageTransition(){
+  if(language == "EN"){
+    setLanguage("es")
+  }
+  else {
+    setLanguage("en")
+  }
+}
 
 return (
  <div className="App-header">
@@ -22,8 +32,8 @@ return (
    <h3>Blog</h3>         
   </nav>
   <div className="LangFlag">
-  <h3>EN</h3>
-  <img src="https://img.freepik.com/iconos-gratis/estados-unidos-america_318-452242.jpg" width="35" height="20" alt="" />
+  <h3>{texts.pageLanguage}</h3>
+  <button className="flagButton" onClick={handleLanguage}><img className="flag" src={texts.flagURL} width="35" height="20" alt="" /></button>
   </div>
   <button className="createQuizz">{texts.headerButton}</button>
  </header>
