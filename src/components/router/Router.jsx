@@ -1,5 +1,6 @@
 import { HashRouter,Route, Routes } from "react-router-dom";
-import Index from "../index/main";
+import { LanguageIndex } from "../index/indexContext";
+
 
 function Router() {
 
@@ -7,7 +8,7 @@ function Router() {
  
  <HashRouter>
   <Routes> 
-  <Route path="/" element={<Index />}/>
+  <Route path="/" element={<LanguageIndex />}/>
   </Routes>
  </HashRouter>
  ) 
