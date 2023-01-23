@@ -3,15 +3,13 @@ import { useState } from "react";
 import { translations, initialLanguage } from "./translations";
 
 
+
 const LanguageContext = createContext();
-
 const LanguageProvider = ({children}) => {
- const [ language, setLanguage ] = useState(initialLanguage);
- const [ texts, setTexts ] = useState(translations[language]); 
-  
+const [ language, setLanguage ] = useState(initialLanguage);
+const [ texts, setTexts ] = useState(translations[language]);  
 
- const handleLanguage = (e) => {
-  console.log(e.target.value)
+const handleLanguage = (e) => {  
  if (language === "en") {
  setLanguage("es")
  setTexts(translations.es)
