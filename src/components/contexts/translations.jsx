@@ -11,7 +11,7 @@ const translations =  {
  pageLanguage: "ES",
  headerButton: "Generar Prueba",
  quizFormTittle: "QuizGPT: Generador de pruebas",
- quizFormP: "Esta app te permite generar una prueba sobre cualquier tema y cualquier nivel de dificultad. Esta basada en Inteligencia artificial avanzada llamada GPT-3 para darte un resultado unico con cada ejecución!",
+ quizFormP: "Esta app te permite generar una prueba sobre cualquier tema y cualquier nivel de dificultad. Esta basada en Inteligencia artificial avanzada llamada GPT-3 ¡para darte un resultado unico con cada ejecución!",
  quizTopic: "Tema de la prueba:",
  quizTopicPlaceholder: "Historia de los derechos civiles en Estados Unidos",
  questionsNumber: "Número de preguntas",
@@ -24,7 +24,7 @@ const translations =  {
  answerCommentsPlaceholder: "Activados",
  formButton: "Enviar",
  screenTit: "Resultados:",
- screenText: "Ingresa tus requerimientos para generar increibles pruebas!"
+ screenText: "¡Ingresa tus requerimientos para generar increibles pruebas!"
  },
  en:{
  headerProduct: "Products",
