@@ -8,15 +8,6 @@ const initialLanguage = 'en'
 const { texts, handleLanguage } = useContext(LanguageContext)
 const { language, setLanguage } = useState(initialLanguage) 
 
-function languageTransition(){
-  if(language == "EN"){
-    setLanguage("es")
-  }
-  else {
-    setLanguage("en")
-  }
-}
-
 return (
  <div className="App-header">
   <header>  
